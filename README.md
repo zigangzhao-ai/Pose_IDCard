@@ -129,5 +129,5 @@ we can get the distance_result.
 |256x192_mobilenetv2_1.0_224_fpn<br>| 99.21 | 96.85 | 321.42 |
 
 ## Reference
-*Xiao, Bin, Haiping Wu, and Yichen Wei. "Simple Baselines for Human Pose Estimation and Tracking". ECCV 2018.
-*https://github.com/mks0601/TF-SimpleHumanPose
+[1].Xiao, Bin, Haiping Wu, and Yichen Wei. "Simple Baselines for Human Pose Estimation and Tracking". ECCV 2018.
+[2].https://github.com/mks0601/TF-SimpleHumanPose
