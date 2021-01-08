@@ -72,10 +72,9 @@ ${POSE_ROOT}
 * We can convert own dataset to [MS COCO format](http://cocodataset.org/#format-data).
 * In the `scripts`, run `json_to_txt.py` to convert original annotation files to txt format .
 * In the `scripts`, run `txt_to_xml.py` to convert txt annotation files to VOC xml format.
+* In the `scripts`, run `modify_image_and_xml.py` to modify the name of image and xml to int format.
 * In the `scripts`, run `xml_to_coco.py` to convert xml annotation files to COCO json format.
-
 * Download imagenet pre-trained mobilenetv2 models from [tf-slim](https://github.com/tensorflow/models/tree/master/research/slim) and place it in the `data/imagenet_weights`.
-
 
 ### Train
 In the `main` folder, run
