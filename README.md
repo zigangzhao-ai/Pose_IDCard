@@ -115,8 +115,8 @@ python test_one.py --gpu 0-1
 |384x288_mobilenetv2_1.4_224<br>(t)| 96.85 | 87.5 | 316.13 | 
 |256x256_mobilenetv2_1.4_224<br>(t)| 95.27| 88.18 | 317.08 | 
 |256x192_mobilenetv2_1.4_224_fpn<br>(t) | 96.85 | 93.70 | 307.76 | 
-|256x192_mobilenetv2_1.0_224fpn<br>(t) | 99.21 | 96.85 | 321.42 | 
+|256x192_mobilenetv2_1.0_224fpn<br>(t) | 99.21 | 96.85 | 321.42 |- | 
 
 ## Reference
-*[1] Xiao, Bin, Haiping Wu, and Yichen Wei. "Simple Baselines for Human Pose Estimation and Tracking". ECCV 2018.
-*[2] https://github.com/mks0601/TF-SimpleHumanPose
+*Xiao, Bin, Haiping Wu, and Yichen Wei. "Simple Baselines for Human Pose Estimation and Tracking". ECCV 2018.
+*https://github.com/mks0601/TF-SimpleHumanPose
