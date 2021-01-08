@@ -71,9 +71,9 @@ ${POSE_ROOT}
 
 ### Data Preprocessing 
 * We can convert own dataset to [MS COCO format](http://cocodataset.org/#format-data).
-* In the `tool`, run `json_to_txt.py` to convert original annotation files to txt format .
-* In the `tool`, run `txt_to_xml.py` to convert txt annotation files to VOC xml format.
-* In the `tool`, run `xml_to_coco.py` to convert xml annotation files to COCO json format.
+* In the `scripts`, run `json_to_txt.py` to convert original annotation files to txt format .
+* In the `scripts`, run `txt_to_xml.py` to convert txt annotation files to VOC xml format.
+* In the `scripts`, run `xml_to_coco.py` to convert xml annotation files to COCO json format.
 
 * Download imagenet pre-trained mobilenetv2 models from [tf-slim](https://github.com/tensorflow/models/tree/master/research/slim) and place it in the `data/imagenet_weights`.
 
@@ -90,6 +90,19 @@ If you want to continue experiment, run
 python train.py --gpu 0-1 --continue
 ```
 `--gpu 0,1` can be used instead of `--gpu 0-1`.
+
+### Val
+In the `test_coco` folder, run
+```bash
+python test_oks.py 
+```
+we can get the oks_result.
+
+and run
+```bash
+python test_distance.py 
+```
+we can get the distance_result.
 
 ### Test
 Place trained model at the `output/model_dump/$DATASET/`.
@@ -109,13 +122,13 @@ python test_one.py --gpu 0-1
 
 ### Results on val_dataset
 
-| Methods | AP .5 | AP .75 | Mean_distance|-
+| Methods | AP .5 | AP .75 | Mean_distance|-|
 |:---:|:---:|:---:|:---:|:---:|
 |256x192_mobilenetv2_1.4_224<br>| 96.85 | 90.50 | 305.74 | 
 |384x288_mobilenetv2_1.4_224<br>| 96.85 | 87.5 | 316.13 | 
 |256x256_mobilenetv2_1.4_224<br>| 95.27| 88.18 | 317.08 | 
 |256x192_mobilenetv2_1.4_224_fpn<br>| 96.85 | 93.70 | 307.76 | 
-|256x192_mobilenetv2_1.0_224fpn<br>| 99.21 | 96.85 | 321.42 |
+|256x192_mobilenetv2_1.0_224_fpn<br>| 99.21 | 96.85 | 321.42 |
 
 ## Reference
 *Xiao, Bin, Haiping Wu, and Yichen Wei. "Simple Baselines for Human Pose Estimation and Tracking". ECCV 2018.
