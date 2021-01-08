@@ -1,7 +1,7 @@
 # Pose_IDCard
 
 ## Introduction
-
+The irregular quadrilateral is detected by key point detection.
 
 ## Dependencies
 * [TensorFlow](https://www.tensorflow.org/)
@@ -22,7 +22,7 @@ ${POSE_ROOT}
 |-- data
 |-- lib
 |-- main
-|-- tes_coco
+|-- test_coco
 |-- scripts
 |-- main
 `-- output
@@ -44,7 +44,6 @@ ${POSE_ROOT}
 `-- |-- imagenet_weights
 |       |-- mobilenetv2_1.4_224.ckpt
 ```
-
 
 ### Output
 You need to follow the directory structure of the `output` folder as below.
