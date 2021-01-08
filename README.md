@@ -120,7 +120,7 @@ python test_one.py --gpu 0-1
 
 ### Results on val_dataset
 
-| Methods | AP .5 | AP .75 | Mean_distance |
+| Methods | AP .5 | AP .75 | Mean_distance |-|
 |:---:|:---:|:---:|:---:|:---:|
 |256x192_mobilenetv2_1.4_224<br>| 96.85 | 90.50 | 305.74 | 
 |384x288_mobilenetv2_1.4_224<br>| 96.85 | 87.5 | 316.13 | 
