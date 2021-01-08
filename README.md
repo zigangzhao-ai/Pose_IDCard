@@ -109,13 +109,13 @@ python test_one.py --gpu 0-1
 
 ### Results on val_dataset
 
-| Methods | AP .5 | AP .75 | Mean_distance| - | 
+| Methods | AP .5 | AP .75 | Mean_distance|
 |:---:|:---:|:---:|:---:|:---:|
-|256x192_mobilenetv2_1.4_224<br>(t) | 96.85 | 90.50 | 305.74 | 
-|384x288_mobilenetv2_1.4_224<br>(t)| 96.85 | 87.5 | 316.13 | 
-|256x256_mobilenetv2_1.4_224<br>(t)| 95.27| 88.18 | 317.08 | 
-|256x192_mobilenetv2_1.4_224_fpn<br>(t) | 96.85 | 93.70 | 307.76 | 
-|256x192_mobilenetv2_1.0_224fpn<br>(t) | 99.21 | 96.85 | 321.42 |- | 
+|256x192_mobilenetv2_1.4_224<br>| 96.85 | 90.50 | 305.74 | 
+|384x288_mobilenetv2_1.4_224<br>| 96.85 | 87.5 | 316.13 | 
+|256x256_mobilenetv2_1.4_224<br>| 95.27| 88.18 | 317.08 | 
+|256x192_mobilenetv2_1.4_224_fpn<br>| 96.85 | 93.70 | 307.76 | 
+|256x192_mobilenetv2_1.0_224fpn<br>| 99.21 | 96.85 | 321.42 |- | 
 
 ## Reference
 *Xiao, Bin, Haiping Wu, and Yichen Wei. "Simple Baselines for Human Pose Estimation and Tracking". ECCV 2018.
