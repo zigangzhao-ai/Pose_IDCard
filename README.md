@@ -89,19 +89,6 @@ python train.py --gpu 0-1 --continue
 ```
 `--gpu 0,1` can be used instead of `--gpu 0-1`.
 
-### Val
-In the `test_coco` folder, run
-```bash
-python test_oks.py 
-```
-we can get the oks_result.
-
-and run
-```bash
-python test_distance.py 
-```
-we can get the distance_result.
-
 ### Test
 Place trained model at the `output/model_dump/$DATASET/`.
 
@@ -115,6 +102,19 @@ If you want to test a single image, run
 ```bash
 python test_one.py --gpu 0-1
 ```
+
+### Val
+In the `test_coco` folder, run
+```bash
+python test_oks.py 
+```
+we can get the oks_result.
+
+and run
+```bash
+python test_distance.py 
+```
+we can get the distance_result.
 
 ## Results
 
