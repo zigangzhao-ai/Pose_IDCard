@@ -10,7 +10,7 @@ The irregular quadrilateral is detected by key point detection.
 * [Anaconda](https://www.anaconda.com/download/)
 * [COCO API](https://github.com/cocodataset/cocoapi)
 
-This code is trained under Ubuntu 16.04, CUDA 10.0, cuDNN 7.1 environment with one NVIDIA 1080Ti GPUs.
+This code is trained under Ubuntu 16.04, CUDA 10.0, cuDNN 7.1 environment with two NVIDIA 1080Ti GPUs.
 Python 3.6.5 version with Anaconda 3 is used for development.
 
 ## Directory
