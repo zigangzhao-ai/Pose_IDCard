@@ -100,7 +100,7 @@ to test the network on the GPU 0,1 with 180th epoch trained model. `--gpu 0,1` c
 
 If you want to test a single image, run 
 ```bash
-python test_one.py --gpu 0-1
+python test_one.py --gpu 0/1
 ```
 
 ### Val
