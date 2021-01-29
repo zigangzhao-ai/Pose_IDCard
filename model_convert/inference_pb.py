@@ -5,7 +5,7 @@ code by zzg-2021/01/27
 # out_names = ["tower_0/headnet/out/BiasAdd"]
 # input_tensor = [1, 256, 192,3]
 # output_tensor = [1, 8, 3]
-#[width, height] = [192, 256]
+# [width, height] = [192, 256]
 
 import tensorflow as tf
 import numpy as np
@@ -163,20 +163,21 @@ if __name__=="__main__":
             # Actual detection.
             output = sess.run([outputs], feed_dict={image_tensor: image_np_expanded})
 
-            print(type(output), output.shape)
-            output = np.expand_dims(np.squeeze(np.array(output)), axis=0) 
+            print(type(output))
+            output = np.array(output)[0, ...]
+            # output = np.expand_dims(np.squeeze(np.array(output)), axis=0) 
             print(output.shape)
             kps_result = convert(output, hh_ori, ww_ori)
             print(kps_result)
             # print(kps_result.shape)
             for i in range(len(kps_result)):
                 tmpkps = np.zeros((3, num_kps))
-                tmpkps[:2,:] = kps_result[i, :, :2].transpose(1,0)
-                tmpkps[2,:] = kps_result[i, :, 2]
+                tmpkps[:2, :] = kps_result[i, :, :2].transpose(1,0)
+                tmpkps[2, :] = kps_result[i, :, 2]
                 tmpimg, cnt = vis_keypoints(ori_image, tmpkps)
 
             # Visualization of the results of a detection.
-            plt.figure(figsize=IMAGE_SIZE)
+            plt.figure()
             plt.imshow(tmpimg)
             plt.show()
 
